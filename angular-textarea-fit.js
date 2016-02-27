@@ -84,7 +84,7 @@ angular
                 'white-space': 'pre-wrap',
                 'word-wrap' : 'break-word'
               });
-            $element.parent().append(elClone);
+            $('body').append(elClone);
             $element.css('overflow', 'hidden');
 
             $scope.$watch(function () {
