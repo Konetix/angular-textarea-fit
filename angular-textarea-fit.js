@@ -48,7 +48,8 @@ angular
                   'font-size',
                   'line-height',
                   'min-height',
-                  'padding'
+                  'padding-right',
+                  'padding-left'
                 ],
                 destStyles = {};
             
@@ -84,7 +85,7 @@ angular
                 'white-space': 'pre-wrap',
                 'word-wrap' : 'break-word'
               });
-            $('body').append(elClone);
+            $element.parent().append(elClone);
             $element.css('overflow', 'hidden');
 
             $scope.$watch(function () {
